@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+<h1>HTML&lt;form&gt;标签</h1>
+<textarea cols="80px" rows="10px">
+<form action="form_action.asp" method="get">
+  <p>First name: <input type="text" name="fname" /></p>
+  <p>Last name: <input type="text" name="lname" /></p>
+  <input type="submit" value="Submit" />
+</form>
+</textarea>
+<form action="form_action.asp" method="get">
+  <p>First name: <input type="text" name="fname" /></p>
+  <p>Last name: <input type="text" name="lname" /></p>
+  <input type="submit" value="Submit" />
+</form>
+<h2>定义和用法</h2>
+<p>&lt;form&gt; 标签用于为用户输入创建 HTML 表单。
+
+表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。
+
+表单还可以包含 menus、textarea、fieldset、legend 和 label 元素。
+
+表单用于向服务器传输数据。</p>
+<h2>提示和注释</h2>
+<p>注释：form 元素是块级元素，其前后会产生折行。</p>
+<h2>属性</h2>
+<p>new:HTML5中的新属性</p>
+<table border="1px">
+  <tr>
+    <th>属性</th>
+    <th>值</th>
+    <th>描述</th>
+  </tr>
+
+  <tr>
+    <td>accept</td>
+    <td><i>MIME_type</i></td>
+    <td><span>HTML 5 中不支持。</span></td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; accept-charset 属性">accept-charset</a></td>
+    <td><i>charset_list</i></td>
+    <td>规定服务器可处理的表单数据字符集。</td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; action 属性">action</a></td>
+    <td><i>URL</i></td>
+    <td>规定当提交表单时向何处发送表单数据。</td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; autocomplete 属性">autocomplete</a></td>
+    <td>
+      <ul>
+      <li>on</li>
+      <li>off</li>
+      </ul>
+    </td>
+    <td>规定是否启用表单的自动完成功能。</td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; enctype 属性">enctype</a></td>
+    <td>见说明</td>
+    <td>规定在发送表单数据之前如何对其进行编码。</td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; method 属性">method</a></td>
+    <td>
+      <ul>
+      <li>get</li>
+      <li>post</li>
+      </ul>
+    </td>
+    <td>规定用于发送 form-data 的 HTTP 方法。</td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; name 属性">name</a></td>
+    <td><i>form_name</i></td>
+    <td>规定表单的名称。</td>
+  </tr>
+
+  <tr>
+    <td title="HTML5 &lt;form&gt; novalidate 属性">novalidate</a></td>
+    <td>novalidate</td>
+    <td>如果使用该属性，则提交表单时不进行验证。</td>
+  </tr>
+
+  <tr>
+    <td><a title="HTML5 &lt;form&gt; target 属性">target</a></td>
+    <td>
+      <ul>
+      <li>_blank</li>
+      <li>_self</li>
+      <li>_parent</li>
+      <li>_top</li>
+      <li><i>framename</i></li>
+      </ul>
+    </td>
+    <td>规定在何处打开 action URL。</td>
+  </tr>
+</table>
+<h2>说明</h2>
+<p>enctype 属性可能的值：</p>
+<li>application/x-www-form-urlencoded</li>
+<li>multipart/form-data</li>
+<li>text/plain</li>
+</body>
+</html>

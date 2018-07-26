@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML 表单和输入</title>
+</head>
+<body>
+	<h2>创建文本字段</h2>
+	<form action="demo-form.php">
+		<fieldset><legend>Student information</legend>
+			姓名：<input type="text" name="name" size="30"><br>
+			学号：<input type="text" name="student number" size="30">
+			<br><input type="submit" value="提交">
+		</fieldset>
+	</form>
+	<p><b>注意：</b>表单本身是不可见的。并且注意一个文本字段的默认宽度是20个字符。<br>点击"提交"按钮，表单数据将被发送到服务器上的“demo-form.php”。</p><br>
+	<h2>创建密码字段</h2>
+	<form action="">
+		Username:<input type="text" name="user"><br>
+		password:<input type="password" name="password">
+		<p><b>注意：</b>密码字段中的字符是隐藏的(显示为星号或圆圈)。</p>
+	</form>
+	<h2>单选按钮（Radio Buttons）</h2>
+	<form action="demo-form.php">
+		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="female">Female<br>
+		<input type="submit" value="提交">
+	</form> 
+	<h2>复选框（Checkboxes）</h2>
+	<form action="demo-form.php">
+		<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+		<input type="checkbox" name="vehicle" value="Car">I have a car
+		<br><input type="submit" value="提交">
+	</form>
+	<h2>提交按钮(Submit Button)</h2>
+	<form name="input" action="html_form_action.php" method="get">
+		Username:<input type="text" name="user">
+		<input type="submit" value="Submit">
+	</form>
+	<form action="">
+		<select name="腾杰No.1">
+			<option value="甘凌方">甘凌方</option>
+			<option value="彭莎丽">彭莎丽</option>
+			<option value="白舒伊">白舒伊</option>
+			<option value="曹兵兵">曹兵兵</option>
+			<option value="洪峰">洪峰</option>
+		</select>
+	</form>
+	<h3>发送邮件到 1171977038@qq.com:</h3>
+
+	<form action="1171977038@qq.com" method="post" enctype="text/plain">
+		Name:<br>
+		<input type="text" name="name" value="your name"><br>
+		E-mail:<br>
+		<input type="text" name="mail" value="your email"><br>
+		Comment:<br>
+		<input type="text" name="comment" value="your comment" size="50"><br><br>
+		<input type="submit" value="发送">
+		<input type="reset" value="重置">
+	</form>
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+		<input type="range" id="a" value="50">100
+		+<input type="number" id="b" value="50">
+		=<output name="x" for="a b"></output>
+	</form>
+</body>
+</html>

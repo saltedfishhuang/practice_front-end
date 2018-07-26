@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>label</title>
+</head>
+<body>
+<h1>HTML&lt;label&gt;标签</h1>
+<P>带有两个输入字段和相关标记的简单 HTML 表单：</P>
+<textarea cols="80px" rows="8px">
+<form>
+  <label for="male">Male</label>
+  <input type="radio" name="sex" id="male" />
+  <br />
+  <label for="female">Female</label>
+  <input type="radio" name="sex" id="female" />
+</form>
+</textarea>
+<p>显示效果如下</p><br>
+<form>
+  <label for="male">Male</label>
+  <input type="radio" name="sex" id="male" />
+  <br />
+  <label for="female">Female</label>
+  <input type="radio" name="sex" id="female" />
+</form>
+<h2>用法和定义</h2>
+<P>&lt;label&gt; 标签为 input 元素定义标注（标记）。
+
+label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+
+&lt;label&gt; 标签的 for 属性应当与相关元素的 id 属性相同。</P>
+<p class="html5_new_note"><span>new</span> : HTML5 中的新属性。</p>
+
+<table border="1px">
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td><a title="HTML5 &lt;label&gt; for 属性">for</a></td>
+<td><i>id</i></td>
+<td>规定 label 绑定到哪个表单元素。</td>
+</tr>
+
+<tr>
+<td><a title="HTML5 &lt;label&gt; form 属性">form</a></td>
+<td><i>formid</i></td>
+<td>规定 label 字段所属的一个或多个表单。</td>
+</tr>
+</table>
+
+</body>
+</html>

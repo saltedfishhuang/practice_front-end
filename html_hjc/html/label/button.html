@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+</head>
+<body>
+	<h1>HTML&lt;button&gt;标签</h1>
+</body>
+<textarea rows="10px" cols="50px">
+	<button type="button">Click Me!</button>
+</textarea>
+<p>试一试</p>
+<button type="button">Click Me!</button>
+<h2>定义和用法</h2>
+<p>&lt;button&gt;标签定义一个按钮</p>
+<p>在 button 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 input 元素创建的按钮之间的不同之处。
+	&lt;button&gt; 控件 与 &lt;input type="button"&gt; 相比，提供了更为强大的功能和更丰富的内容。&lt;button&gt; 与 &lt;/button&gt; 标签之间的所有内容都是按钮的内容，其中包括任何可接受的正文内容，比如文本或多媒体内容。例如，我们可以在按钮中包括一个图像和相关的文本，用它们在按钮中创建一个吸引人的标记图像。</p>
+	<p>唯一禁止使用的元素是图像映射，因为它对鼠标和键盘敏感的动作会干扰表单按钮的行为。</p>
+	<p>请始终为按钮规定 type 属性。Internet Explorer 的默认类型是 "button"，而其他浏览器中（包括 W3C 规范）的默认值是 "submit"。</p>
+	<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+	<p>HTML 5 中的新属性：autofocus, form, formaction, formenctype, formmethod, formnovalidate 以及 formtarget。</p>
+	<h3>提示和注释</h3>
+	<P>注释：如果在 HTML 表单中使用 button 元素，不同的浏览器会提交不同的按钮值。请使用 input 元素在 HTML 表单中创建按钮。</P>
+	<table border="1px">
+		<tr>
+			<th>属性</th>
+			<th>值</th>
+			<th>描述</th>
+		</tr>
+		<tr>
+			<td><a>autofocus</a></td>
+			<td>autofocus</td>
+			<td>规定当页面加载时按钮应当自动地获得焦点。</td>
+		</tr>
+		<tr>
+			<td><a>disabled</a></td>
+			<td>disabled</td>
+			<td>规定应该禁用该按钮。</td>
+		</tr>
+		<tr>
+			<td>form</a></td>
+			<td><i>form_name</i></td>
+			<td>规定按钮属于一个或多个表单。</td>
+		</tr>
+		<tr>
+			<td>formaction</a></td>
+			<td><i>url</i></td>
+			<td>
+				<p>覆盖 form 元素的 action 属性。</p>
+				<p><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p>
+			</td>
+		</tr>
+		<tr>
+			<td>formenctype</a></td>
+			<td>见注释</td>
+			<td>
+				<p>覆盖 form 元素的 enctype 属性。</p>
+				<p><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p>
+			</td>
+		</tr>
+		<tr>
+			<td>formmethod</a></td>
+			<td>
+				<ul>
+					<li>get</li>
+					<li>post</li>
+				</ul>
+			</td>
+			<td>
+				<p>覆盖 form 元素的 method 属性。</p>
+				<p><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p>
+			</td>
+		</tr>
+		<tr>
+			<td>formnovalidate</a></td>
+			<td>formnovalidate</td>
+			<td>
+				<p>覆盖 form 元素的 novalidate 属性。</p>
+				<p><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p>
+			</td>
+		</tr>
+		<tr>
+			<td>formtarget</a></td>
+			<td>
+				<ul>
+					<li>_blank</li>
+					<li>_self</li>
+					<li>_parent</li>
+					<li>_top</li>
+					<li><i>framename</i></li>
+				</ul>
+			</td>
+			<td>
+				<p>覆盖 form 元素的 target 属性。</p>
+				<p><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a>name</a></td>
+			<td><i>button_name</i></td>
+			<td>规定按钮的名称。</td>
+		</tr>
+		<tr>
+			<td><a>type</a></td>
+			<td>
+				<ul>
+					<li>button</li>
+					<li>reset</li>
+					<li>submit</li>
+				</ul>
+			</td>
+			<td>规定按钮的类型。</td>
+		</tr>
+		<tr>
+			<td><a>value</a></td>
+			<td><i>text</i></td>
+			<td>规定按钮的初始值。可由脚本进行修改。</td>
+		</tr>
+	</table>
+	<p class="note"><span>注释：</span>formenctype 属性可能的值：</p>
+
+<ul>
+<li>application/x-www-form-urlencoded</li>
+<li>multipart/form-data</li>
+<li>text/plain</li>
+</ul>
+
+	</html>

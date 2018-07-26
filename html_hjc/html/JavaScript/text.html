@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*这是一个注释语句*/
+var name  //定义一个变量
+var a = 7;//定义一个变量a，把7赋值给这个变量
+var b = a;// 把a的值赋值给b
+//定义3个变量 a、b、c ，并且分别给它们赋值：5、10、"I am a" ，这样它们就不会变成 undefined（未定义的了）。
+var a = 5;
+var b = 10;
+var c = "I am a";
+//使用驼峰法给变量命名
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+//加法运算
+var jiafa = 10 + 10;
+//减法运算
+var jianfa = 10 - 4;
+//乘法运算
+var chengfa = 10 * 5;
+//除法运算
+var chufa = 19 / 2;
+//自增运算
+b = b++;
+//自减运算
+b = b--;
+//浮点数
+var fudian = 1.234;
+//小数乘法
+fudian = 1.234 * 2.343;
+//小数除法
+dudian = 2392.4/2131.1;
+//取余运算
+var quyu = 10 % 3;
+//+=赋值操作
+a += 12;
+b += 9;
+c += 7;
+//-=运算符
+a -= 12;
+b -= 9;
+c -= 7;
+//*=运算符
+a *= 12;
+b *= 9;
+c *= 7;
+// /=运算符
+a /= 12;
+b /=  4;
+c /=  11;
+function convert(celsius) {
+	var fahrenheit = celsius*9/5+32;
+	return fahrenheit;
+}
+//声明字符串变量
+var zifuchang = "aaaaa";
+ //转义字符
+ var zhuanyi = "I am a \"double quoted\" string inside \"double quotes\"";
+ //单引号引用字符串
+ var danyinhao = '<a href="http://www.example.com" target="_blank">Link</a>';
+ //转义字符串中的特殊符号
+ var myStrQWEQW=("\\ \t \b \r \n");
+ //字符串连接
+ var myStrEMMM = "This is the start. " + "This is the end.";
+//+=连接字符串操作
+var myStrlianijie = "This is the first sentence. ";
+myStrlianijie += "This is the second sentence.";
+//使用变量连接字符串
+var myNamebianl = "hjc";
+var myStrbianl="My name is " + myNamebianl + " and I am swell!";
+//追加变量到字符串上
+var someAdjective1 = "aha";
+var myStr1 = "Learning to code is ";
+myStr1 +=someAdjective1;
+//获取字符串的长度
+var lastNameLength = 0;
+var lastName123 = "Lovelace";
+lastNameLength = lastName123.length;
+//使用中括号获取字符串中的第一个字符
+var firstLetterOfLastName = "";
+var lastName111 = "Lovelace";
+firstLetterOfLastName = lastName111[0];
+//使用中括号索引查找字符串中的第N个字符
+var lastName1111 = "Lovelace";
+var thirdLetterOfLastName = lastName1111[2];
+//使用中括号索引查找字符串中的最后一个字符
+var lastName8989 = "Lovelace";
+var lastLetterOfLastName = lastName8989[lastName8989.length-1];
+//综合练习
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+	var result = "";
+	result = myAdjective+" "+myNoun+" "+myVerb+" "+myAdverb;
+	return result;
+}
+wordBlanks("cat", "little", "hit", "slowwly");
+// 数组操作
+Var myArray1 = ["sdadas",123];
+//多维数组操作
+var myArray2 = [["fnsfsfsa",2]];
+//使用索引查找数组中的数据
+var myArray3 = [1,2,3];
+var myData3 = myArray3[0];
+// 使用索引修改数组中的数据
+var myArray4 = [1,2,3];
+myArray4[0] = 3;
+//使用索引操作多维数组
+var myArray5 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myData5 = myArray5[2][1];
+//push()函数追加数组数据
+var myArray6 = [["John", 23], ["cat", 2]];
+myArray6.push(["dog",3]);
+//pop()函数弹出数组最后数据
+var myArray7 = [["John", 23], ["cat", 2]];
+var removedFromMyArray7 = myArray7.pop();
+//shift()函数移出数组第一个数据
+var myArray8 = [["John", 23], ["dog", 3]];
+var removedFromMyArray8 = myArray8.shift();
+//unshift()函数移入数据到数组第一位
+var myArray9 = [["John", 23], ["dog", 3]];
+myArray9.shift();
+myArray9.unshift(["Paul",35]);
+//创建购物清单实战案例
+var myList10 = [["Chocolate Bar", 15],["Chocolate Bar", 15],["Chocolate Bar", 15],["Chocolate Bar", 15],["Chocolate Bar", 15]];
+//函数定义
+function myFunction1(){
+	console.log("Hi World");
+}
+myFunction1();
+//带参数函数定义
+function myFunction2(a,b){
+	console.log(a+b);
+}
+myFunction2(1,2);
+//函数全局变量定义
+function fun1() {
+	oopsGlobal = 5;
+}
+var myGlobal = 10;
+function fun21() {
+	var output1 = "";
+	if (typeof myGlobal != "undefined") {
+		output1 += "myGlobal: " + myGlobal;
+	}
+	if (typeof oopsGlobal != "undefined") {
+		output1 += " oopsGlobal: " + oopsGlobal;
+	}
+	console.log(output1);
+}
+//函数局部变量定义
+function myFunction3() {
+	'use strict';
+
+	var myVar;
+	console.log(myVar);
+}
+myFunction3();
+//函数全局变量与局部变量差异
+var outerWear = "T-Shirt";
+function myFunction4() {
+	var outerWear = "sweater";
+	return outerWear;
+}
+myFunction4();
+//函数使用return返回值
+function minusSeven(num233) {
+	return num233 - 7;
+}
+function timesFive(num233){
+	return num233*5;
+}
+//函数使用返回值进行赋值
+var processed = 0;
+
+function process(num1122) {
+	return (num1122 + 3) / 5;
+}
+processed = process(7);
+//队列
+function queue(arr, item) {
+	arr.push(item);
+	item=arr.shift();
+	return item;
+}
+var testArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(queue(testArr, 6)); 
+console.log("After: " + JSON.stringify(testArr));
+//布尔boolean数据类型
+function welcomeToBooleans() {
+	return true; 
+//if语句
+function myFunction45454(wasThatTrue) {
+	if(wasThatTrue==true)
+		return "That was true";
+	else
+		return "That was false";
+}
+
+myFunction45454(true);
+//等于比较运算符==
+function myTest(val) {
+	if (val==12) { 
+		return "Equal";
+	}
+	return "Not Equal";
+}
+myTest(10);
+//全等于比较运算符===
+function myTest1(val) {
+	if (val===7) {
+		return "Equal";
+	}
+	return "Not Equal";
+}
+myTest1(10);
+//不等于比较运算符!=
+function myTest2(val) {
+	if (val!=99) { 
+		return "Not Equal";
+	}
+	return "Equal";
+}
+myTest2(10);
+//不全等于比较运算符!==
+function myTest3(val) {
+	if (val!==17) {
+		return "Not Equal";
+	}
+	return "Equal";
+}
+myTest3(10);
+//大于比较运算符>
+function myTest4(val) {
+	if (val>100) {
+		return "Over 100";
+	}
+
+	if (val>10) {
+		return "Over 10";
+	}
+
+	return "10 or Under";
+}
+myTest4(10);
+//大于等于比较运算符>=
+function myTest5(val) {
+	if (val>=20) {
+		return "20 or Over";
+	}
+	if (val>=10) {
+		return "10 or Over";
+	}
+	return "9 or Under";
+}
+myTest5(100);
+//小于比较运算符<
+function myTest6(val) {
+	if (val<25) {
+		return "Under 25";
+	}
+	if (val<55) {
+		return "Under 55";
+	}
+	return "55 or Over";
+}
+myTest6(10);
+//小于等于比较运算符<=
+function myTest7(val) {
+	if (val<=12) {
+		return "Smaller Than or Equal to 12";
+	}
+	if (val<=24) {
+		return "Smaller Than or Equal to 24";
+	}
+	return "25 or More";
+}
+myTest7(10);
+//使用逻辑与运算符&&比较数值
+function myTest8(val) {
+	if (val>=25&&val<=50)  {
+		return "Yes";
+	}
+	return "No";
+}
+myTest8(30);
+//使用逻辑或运算符||比较数值
+function myTest9(val) {
+	if (val>20||val<10) {
+		return "Outside";
+	}
+	return "Inside";
+}
+myTest9(10);
+//else语句
+function myTest10(val) {
+	var result = "";
+	if (val > 5) {
+		result = "Bigger than 5";
+	}
+	else {
+		result = "5 or Smaller";
+	}
+	return result;
+}
+myTest10(4);
+//else if语句
+function myTest11(val) {
+	if (val > 10) {
+		return "Greater than 10";
+	}
+	else if (val < 5) {
+		return "Smaller than 5";
+	}
+	else
+		return "Between 5 and 10";
+}
+myTest11(7);
+//if、else if语句中代码的执行顺序
+function myTest12(val) {
+	if (val < 5) {
+		return "Less than 5";
+	}
+	else if (val < 10) {
+		return "Less than 10";
+	} 
+	else {
+		return "Greater than or equal to 10";
+	}
+}
+myTest12(7);
+//同时使用if、else if 语句
+function myTest13(num) {
+	if(num<5){return "Tiny";}
+	else if (num <10) { return "Small";}
+	else if (num < 15 ) {return "Medium";}
+	else if (num < 20)  {return "Large";}
+	else return "Huge";
+}
+myTest13(7);
+//逻辑运算综合实战
+function golfScore(par, strokes) {
+	if (strokes==1) return "Hole-in-one!";
+	else if(strokes<=(par-2)) return "Eagle";
+	else if(strokes<=(par-1)) return "Birdie";
+	else if(strokes==par) return "Par";
+	else if(strokes==(par+1)) return "Bogey";
+	else if(strokes==(par+2)) return "Double Bogey";
+	else return "Go Home!";
+}
+golfScore(5, 9);
+//使用switch语句进行多选项选择
+function myTest14(val) {
+	var answer = "";
+	switch (val) {
+		case 1: answer="alpha";break;
+		case 2: answer="beta";break;
+		case 3: answer="gamma";break;
+		case 4: answer="delta";break; 
+		default:
+	}
+	return answer;
+}
+myTest14(1);
+//在switch语句中添加default语句
+function myTest15(val) {
+	var answer = "";
+	switch (val) {
+		case 'a': answer= "apple"; break;
+		case 'b': answer= "bird"; break;
+		case 'c':answer = "cat"; break;
+		default: answer= "stuff";
+	}
+	return answer;
+}
+myTest15(1);
+//switch语句中的多个相同选项判断
+function myTest16(val) {
+	var answer = "";
+// Only change code below this line
+switch (val) {
+	case 1:
+	case 2:
+	case 3:
+	answer="Low";
+	break;
+	case 4:
+	case 5:
+	case 6:
+	answer="Mid";break;
+	case 7:
+	case 8:
+	case 9:
+	answer="High";break;
+
+	default:
+}
+return answer;
+}
+myTest16(1);
+//使用switch语句替换串联的if、else if语句
+function myTest17(val) {
+	var answer = "";
+	switch (val) {
+		case 'bob':answer = "Marley";break;
+		case 42:answer = "The Answer";break;
+		case 1:answer = "There is no #1";break;
+		case 99:answer = "Missed me by this much!";break;
+		case 7:answer = "Ate Nine";break;
+
+		default:
+	}
+	return answer;
+}
+myTest17(7);
+//直接在函数中返回boolean值
+function isLess(a, b) {
+	return a<b;
+}
+isLess(10, 15);
+//在函数中使用return跳出函数
+function abTest(a, b) {
+	if(a<0||b<0) return undefined;
+	return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+abTest(-2,2);
+//条件判断算法综合实战
+var count = 0;
+
+function cc(card) {
+// Only change code below this line
+var cards={
+	2:1,3:1,4:1,5:1,6:1,7:0,8:0,9:0,10:-1,"J":-1,"Q":-1,"K":-1,"A":-1
+};
+count=count+cards[card];
+if(count>0){
+	return count+" Bet";
+}
+else{
+	return count+" Hold";
+}
+return "Change Me";
+}
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+//对象操作
+var myDog = {
+	"name":"sa",
+	"legs":12,
+	"tails":12,
+	"friends":[1,2,3,4]
+};
+//使用点操作符.读取对象属性
+var testObj = {
+	"hat": "ballcap",
+	"shirt": "jersey",
+	"shoes": "cleats"
+};
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+//使用[]读取对象属性
+var testObj1 = {
+	"an entree": "hamburger",
+	"my side": "veggies",
+	"the drink": "water"
+};
+var entreeValue = testObj1["an entree"];
+var drinkValue = testObj1["the drink"];
+//使用变量访问对象属性
+var testObj2 = {
+	12: "Namath",
+	16: "Montana",
+	19: "Unitas"
+};
+var playerNumber = 16;
+var player = testObj2[playerNumber];
+//更新对象属性
+var myDog1 = {
+	"name": "Coder",
+	"legs": 4,
+	"tails": 1,
+	"friends": ["Free Code Camp Campers"] 
+};
+myDog1.name = "Happy Coder";
+//给对象添加属性
+var myDog2 = {
+	"name": "Happy Coder",
+	"legs": 4,
+	"tails": 1,
+	"friends": ["Free Code Camp Campers"]
+};
+myDog2.bark = "woof";
+//删除对象属性
+var myDog2 = {
+	"name": "Happy Coder",
+	"legs": 4,
+	"tails": 1,
+	"friends": ["Free Code Camp Campers"],
+	"bark": "woof"
+};
+delete myDog2["tails"];
+// 使用对象进行查找值
+function phoneticLookup(val) {
+	var result = "";
+	var lookup = {
+		'alpha': "Adams",
+		'bravo': "Boston",
+		'charlie': "Chicago",
+		'delta': "Denver",
+		'echo': "Easy",
+		'foxtrot': "Frank",
+		'': undefined
+	};
+
+	result = lookup[val];
+	return result;
+}
+phoneticLookup("charlie");
+//检查对象属性
+var myObj = {
+	gift: "pony",
+	pet: "kitten",
+	bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+// Your Code Here
+var tr = myObj.hasOwnProperty(checkProp); //检查对象是否存在，将结果赋值给tr
+  if(tr===true){                            //判断tr是否true ？（存在）
+    return myObj[checkProp]; //             //存在则返回属性对应的值
+}else{
+    return "Not Found";   }                  //不存在，则返回“Not Found”
+}
+checkObj("gift");
+//JSON操作
+var myMusic = [
+{
+	"artist": "Billy Joel",
+	"title": "Piano Man",
+	"release_year": 1973,
+	"formats": [ 
+	"CS", 
+	"8T", 
+	"LP" ],
+	"gold": true
+},
+{
+	"artist":"q",
+	"title":"111",
+	"release_year":123,
+	"formats":["wqe","dasd","das"]
+}
+];
+//获取JSON属性值
+var myStorage = {
+	"car": {
+		"inside": {
+			"glove box": "maps",
+			"passenger seat": "crumbs"
+		},
+		"outside": {
+			"trunk": "jack"
+		}
+	}
+};
+var gloveBoxContents = myStorage.car.inside["glove box"];
+//获取JSON数组值
+var myPlants = [
+{ 
+	type: "flowers",
+	list: [
+	"rose",
+	"tulip",
+	"dandelion"
+	]
+},
+{
+	type: "trees",
+	list: [
+	"fir",
+	"pine",
+	"birch"
+	]
+}
+];
+var secondTree = myPlants[1].list[1];
+//JSON集合操作
+var collection = {
+	2548: {
+		album: "Slippery When Wet",
+		artist: "Bon Jovi",
+		tracks: [ 
+		"Let It Rock", 
+		"You Give Love a Bad Name" 
+		]
+	},
+	2468: {
+		album: "1999",
+		artist: "Prince",
+		tracks: [ 
+		"1999", 
+		"Little Red Corvette" 
+		]
+	},
+	1245: {
+		artist: "Robert Palmer",
+		tracks: [ ]
+	},
+	5439: {
+		album: "ABBA Gold"
+	}
+};
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+function update(id, prop, value) {
+
+	if(value !==''&&prop !=='tracks'){
+		collectionCopy[id][prop]=value;
+	}
+	else if(value !==''&&prop =='tracks'){ 
+		collectionCopy[id][prop].push(value);
+	}
+	else if(value ===''){
+		delete collectionCopy[id][prop];
+	}
+	return collection;
+}
+update(5439, "artist", "ABBA");
+//使用for语句循环迭代
+var myArray345 = [];
+for(var i  = 1; i<=5;i++ )
+	myArray345.push(i);
+//使用for语句循环按奇数顺序迭代
+var myArray001 = [];
+for (var i = 1; i <=9; i += 2) {
+	myArray001.push(i);
+}
+//使用for循环逆向迭代
+var myArray002 = [];
+for (var i = 9; i > 0; i -= 2) {
+	myArray002.push(i);
+}
+//使用for循环迭代输出数组
+var myArr003 = [ 2, 3, 4, 5, 6];
+var total = 0;
+for (var i = 0; i < myArr003.length; i++) {
+	total += myArr003[i];
+}
+//循环语句综合实战
+function multiplyAll(arr) {
+	var product = 1;
+	for (var i=0; i < arr.length; i++) {
+		for (var j=0; j < arr[i].length; j++) {
+			product*=arr[i][j];
+		}
+	}
+	return product;
+}
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+//使用while语句循环迭代
+var myArray004 = [];
+var i = 0;    
+while(i < 5) {    
+	myArray004.push(i);    
+	i++;    
+}
+//使用循环语句查找通讯录
+var contacts = [
+{
+	"firstName": "Akira",
+	"lastName": "Laine",
+	"number": "0543236543",
+	"likes": ["Pizza", "Coding", "Brownie Points"]
+},
+{
+	"firstName": "Harry",
+	"lastName": "Potter",
+	"number": "0994372684",
+	"likes": ["Hogwarts", "Magic", "Hagrid"]
+},
+{
+	"firstName": "Sherlock",
+	"lastName": "Holmes",
+	"number": "0487345643",
+	"likes": ["Intriguing Cases", "Violin"]
+},
+{
+	"firstName": "Kristian",
+	"lastName": "Vos",
+	"number": "unknown",
+	"likes": ["Javascript", "Gaming", "Foxes"]
+}
+];
+function lookUpProfile(firstName, prop){
+	for(var i=0;i<contacts.length;i++)
+	{
+		if(firstName==contacts[i].firstName)
+		{
+			if(contacts[i].hasOwnProperty(prop))
+			{
+				return contacts[i][prop];
+			}
+			else
+			{
+				return "No such property";
+			}
+		}                                        
+	}
+	return "No such contact";
+}
+lookUpProfile("Akira", "likes");
+//使用random()生成随机小数
+function randomFunction() {
+	return Math.random();
+}
+//使用random()生成随机数
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+function myFunction() {
+	return Math.floor(Math.random()*10);
+}
+//使用random()在一个范围内生成随机数
+function randomRange(myMin, myMax) {
+	return Math.floor(Math.random()*(myMax-myMin+1))+myMin;
+}
+var myRandom = randomRange(5, 15);
+//使用正则表达式操作字符串
+var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+var expressionToGetSoftware = /software/gi;
+var softwareCount = testString.match(expressionToGetSoftware).length;
+var expression = /and/gi;
+var andCount = testString.match(expression).length;
+//使用正则表达式选取数值
+var testString1 = "There are 3 cats but 4 dogs.";
+var expression1 = /\d+/g;
+var digitCount1 = testString1.match(expression1).length;
+// 使用正则表达式选取空白字符
+var testString2 = "How many spaces are there in this sentence?";
+var expression2 = /\s+/g;
+var spaceCount2 = testString2.match(expression2).length;
+//使用正则表达式反转匹配
+var testString3 = "How many non-space characters are there in this sentence?";
+var expression3 = /\S/g;
+var nonSpaceCount3 = testString3.match(expression3).length;
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

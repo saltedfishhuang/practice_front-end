@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input</title>
+</head>
+<body>
+	<h1>HTML &lt;input&gt; 标签</h1>
+	<h2>实例</h2>
+	<p>一个简单的 HTML 表单，包含两个文本输入框和一个提交按钮：</p>
+	<textarea cols="80px" rows="7px">
+	<form action="form_action.asp" method="get">
+		First name: <input type="text" name="fname" />
+		Last name: <input type="text" name="lname" />
+	 	<input type="submit" value="Submit" />
+	</form>
+	</textarea>
+	<p>浏览器显示效果如下</p>
+	<form action="form_action.asp" method="get">
+		First name: <input type="text" name="fname" />
+		Last name: <input type="text" name="lname" />
+		<input type="submit" value="Submit" />
+	</form>
+	<h2>定义和用法</h2>
+	<p>&lt;input&gt; 标签用于搜集用户信息。根据不同的 type 属性值，输入字段拥有很多种形式。输入字段可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等等。</p>
+	<h2>属性</h2>
+
+	<p class="html5_new_note"><span>new</span> : HTML5 中的新属性。</p>
+
+	<table border="1px">
+		<tr>
+			<th style="width:20%;">属性</th>
+			<th style="width:20%;">值</th>
+			<th style="width:60%;">描述</th>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 accept 属性">accept</a></td>
+			<td><i>mime_type</i></td>
+			<td>规定通过文件上传来提交的文件的类型。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 align 属性">align</a></td>
+			<td>
+				<ul>
+					<li>left</li>
+					<li>right</li>
+					<li>top</li>
+					<li>middle</li>
+					<li>bottom</li>
+				</ul>
+			</td>
+			<td><span>不赞成使用。</span>规定图像输入的对齐方式。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 alt 属性">alt</a></td>
+			<td>text</td>
+			<td>定义图像输入的替代文本。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; autocomplete 属性">autocomplete</a></td>
+			<td>
+				<ul>
+					<li>on</li>
+					<li>off</li>
+				</ul>
+			</td>
+			<td>规定是否使用输入字段的自动完成功能。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; autofocus 属性">autofocus</a></td>
+			<td>autofocus</td>
+			<td>
+				<p>规定输入字段在页面加载时是否获得焦点。</p>
+				<p>（不适用于 type=&quot;hidden&quot;）</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 checked 属性">checked</a></td>
+			<td>checked</td>
+			<td>规定此 input 元素首次加载时应当被选中。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 disabled 属性">disabled</a></td>
+			<td>disabled</td>
+			<td>当 input 元素加载时禁用此元素。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; form 属性">form</a></td>
+			<td><i>formname</i></td>
+			<td>规定输入字段所属的一个或多个表单。</td>
+		</tr>
+
+		<tr>
+			<td ><a title="HTML5 &lt;input&gt; formaction 属性">formaction</a></td>
+			<td><i>URL</i></td>
+			<td>
+				<p>覆盖表单的 action 属性。</p>
+				<p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td ><a title="HTML5 &lt;input&gt; formenctype 属性">formenctype</a></td>
+			<td>见注释</td>
+			<td>
+				<p>覆盖表单的 enctype 属性。</p>
+				<p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; formmethod 属性">formmethod</a></td>
+			<td>
+				<ul>
+					<li>get</li>
+					<li>post</li>
+				</ul>
+			</td>
+			<td>
+				<p>覆盖表单的 method 属性。</p>
+				<p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; formnovalidate 属性">formnovalidate</a></td>
+			<td>formnovalidate</td>
+			<td>
+				<p>覆盖表单的 novalidate 属性。</p>
+				<p>如果使用该属性，则提交表单时不进行验证。</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; formtarget 属性">formtarget</a></td>
+			<td>
+				<ul>
+					<li>_blank</li>
+					<li>_self</li>
+					<li>_parent</li>
+					<li>_top</li>
+					<li><i>framename</i></li>
+				</ul>
+			</td>
+			<td>
+				<p>覆盖表单的 target 属性。</p>
+				<p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; height 属性">height</a></td>
+			<td>
+				<ul>
+					<li><i>pixels</i></li>
+					<li><i>%</i></li>
+				</ul>
+			</td>
+			<td>定义 input 字段的高度。（适用于 type=&quot;image&quot;）</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; list 属性">list</a></td>
+			<td><i>datalist-id</i></td>
+			<td>引用包含输入字段的预定义选项的 datalist 。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; max 属性">max</a></td>
+			<td>
+				<ul>
+					<li><i>number</i></li>
+					<li><i>date</i></li>
+				</ul>
+			</td>
+			<td>
+				<p>规定输入字段的最大值。</p>
+				<p>请与 &quot;min&quot; 属性配合使用，来创建合法值的范围。</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 maxlength 属性">maxlength</a></td>
+			<td>number</td>
+			<td>规定输入字段中的字符的最大长度。</td>
+		</tr>
+
+		<tr>
+			<td title="HTML5 &lt;input&gt; min 属性">min</a></td>
+			<td>
+				<ul>
+					<li><i>number</i></li>
+					<li><i>date</i></li>
+				</ul>
+			</td>
+			<td>
+				<p>规定输入字段的最小值。</p>
+				<p>请与 &quot;max&quot; 属性配合使用，来创建合法值的范围。</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML5 &lt;input&gt; multiple 属性">multiple</a></td>
+			<td>multiple</td>
+			<td>如果使用该属性，则允许一个以上的值。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 name 属性">name</a></td>
+			<td>field_name</td>
+			<td>定义 input 元素的名称。</td>
+		</tr>
+
+		<tr>
+			<td><a  title="HTML5 &lt;input&gt; pattern 属性">pattern</a></td>
+			<td><i>regexp_pattern</i></td>
+			<td>
+				<p>规定输入字段的值的模式或格式。</p>
+				<p>例如 pattern=&quot;[0-9]&quot; 表示输入值必须是 0 与 9 之间的数字。</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td ><a  title="HTML5 &lt;input&gt; placeholder 属性">placeholder</a></td>
+			<td><i>text</i></td>
+			<td>规定帮助用户填写输入字段的提示。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 readonly 属性">readonly</a></td>
+			<td>readonly</td>
+			<td>规定输入字段为只读。</td>
+		</tr>
+
+		<tr>
+			<td ><a href="/tags/att_input_required.asp" title="HTML5 &lt;input&gt; required 属性">required</a></td>
+			<td>required</td>
+			<td>指示输入字段的值是必需的。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 size 属性">size</a></td>
+			<td>number_of_char</td>
+			<td>定义输入字段的宽度。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 src 属性">src</a></td>
+			<td>URL</td>
+			<td>定义以提交按钮形式显示的图像的 URL。</td>
+		</tr>
+
+		<tr>
+			<td ><a title="HTML5 &lt;input&gt; step 属性">step</a></td>
+			<td><i>number</i></td>
+			<td>规定输入字的的合法数字间隔。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 type 属性">type</a></td>
+			<td>
+				<ul>
+					<li>button</li>
+					<li>checkbox</li>
+					<li>file</li>
+					<li>hidden</li>
+					<li>image</li>
+					<li>password</li>
+					<li>radio</li>
+					<li>reset</li>
+					<li>submit</li>
+					<li>text</li>
+				</ul>
+			</td>
+			<td>规定 input 元素的类型。</td>
+		</tr>
+
+		<tr>
+			<td><a title="HTML &lt;input&gt; 标签的 value 属性">value</a></td>
+			<td><i>value</i></td>
+			<td>规定 input 元素的值。</td>
+		</tr>
+
+		<tr>
+			<td ><a title="HTML5 &lt;input&gt; width 属性">width</a></td>
+			<td>
+				<ul>
+					<li><i>pixels</i></li>
+					<li><i>%</i></li>
+				</ul>
+			</td>
+			<td>定义 input 字段的宽度。（适用于 type=&quot;image&quot;）</td>
+		</tr>
+
+	</table>
+
+</body>
+</html>

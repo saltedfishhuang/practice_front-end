@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iframe</title>
+</head>
+<body>
+<h1>&lt;iframe&gt;标签</h1>
+<p>通过使用&lt;iframe&gt;标签，你可以在同一个浏览器窗口中显示不止一个页面。</p>
+<h2>ifame - 设置高度和宽度</h2>
+<P>height 和 width 属性用来定义iframe标签的高度与宽度。
+
+属性默认以像素为单位, 但是你可以指定其按比例显示 (如："80%")。</P>
+<textarea cols="100px" rows="5px">
+<iframe src="demo_iframe.htm" width="200" height="200"></iframe>
+</textarea>
+<P>浏览器显示如下：</P>
+<iframe src="demo_iframe.htm" width="200" height="200"></iframe>
+<h2>Iframe - 移除边框</h2>
+<p>frameborder 属性用于定义iframe表示是否显示边框。
+
+设置属性值为 "0" 移除iframe的边框:</p>
+<textarea cols="100px" rows="5px">
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
+</textarea>
+<p>浏览器显示如下</p>
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
+<h2>使用iframe来显示目标链接页面</h2>
+<p>iframe可以显示一个目标链接的页面
+
+目标链接的属性必须使用iframe的属性，如下实例:</p>
+<textarea cols="100px" rows="5px">
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+</textarea>
+<p>浏览器显示效果如下</p>
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+</body>
+</html>

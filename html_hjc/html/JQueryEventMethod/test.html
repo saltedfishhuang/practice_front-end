@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery 事件方法</title>
+	<script src="../../js/jquery/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<p id="bind">.bind测试</p>
+	<input id="blur" type="" name="">
+	<p id="change">单击这个段落</p>
+	<p id="dblclick">双击这个段落</p>
+	<div id="delegatediv"><p id="delegatep">单击这个会改变背景颜色</p></div>
+	<h1 id="currentTargeth1">点击这个标题1</h1>
+	<h2 id="currentTargeth2">点击这个标题2</h2>
+	<p id="currentTargetp">点击这个段落</p>
+	<p id="data">点击这个段落</p>
+	<div style="background-color:yellow" id="delegateTarget">
+		<p>Click the button to change the background color of this div.</p>
+		<button>Click me!</button>
+	</div>
+	<a href="www.baidu.com" id="isDefaultPrevented">这是一个链接</a>
+	<div id="stopImmediatePropagation" style="height:100px;width:300px;padding:10px;border:1px solid blue;background-color:lightblue;">Click on this div element.</div>
+	<div id="isPropagationStopped" style="height:100px;width:300px;padding:10px;border:1px solid blue;background-color:lightblue;">Click on this div element.</div>
+	<p id="namespacep">Click on this paragraph.</p>
+	<button id="namespacebtn">Remove namespace</button>
+	<p id="pagexp">The mouse pointer position is at: <span id="pagexspan"></span></p>
+	<p id="pageyp">The mouse pointer position is at: <span id="pageyspan"></span></p>
+	<a id="preventDefaulta" href="http://w3cschool.cn/">Go to W3Cschool.cc</a>
+	<p id="preventDefaultp" >The preventDefault() method will prevent the link above from following the URL.</p>
+	<div id="relatedTarget" style="height:100px;width:300px;padding:10px;border:1px solid blue;background-color:lightblue;">Click on this div element.</div>
+	<button id="resultbtn">Click me to display event.result</button>
+	<p id="resultp">This is a paragraph.</p>
+	<div id="stopImmediatePropagationdiv" style="height:100px;width:300px;padding:10px;border:1px solid blue;background-color:lightblue;">Click on this div element.</div>
+	<p id="stopImmediatePropagationp">The second and third click event will not be executed due to event.stopImmediatePropagation(). Try to erase this method and see what happens.</p>
+
+
+
+
+
+
+
+</body>
+</html>

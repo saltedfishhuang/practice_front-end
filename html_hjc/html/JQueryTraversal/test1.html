@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML遍历 祖先</title>
+	<script src="../../js/jquery/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<h1 id="addh1">Welcome</h1>
+	<p id="addp1">A p element.</p>
+	<p id="addp2">Another p element.</p>
+
+	<span id="addspan1">A span element.</span>
+	<span id="addspan2">A span element.</span><br><br>
+
+	<div id="adddiv">This example adds the same css style for both p and span elements, as the existing h1 element.</div>
+
+	<div id="contentdiv"><em>Hello world! What a beautiful day!</em></div>
+
+	<p>In this example, by clicking on the button, we search for all the text nodes inside the div element and wrap them with a b element.</p>
+
+	<button id="contentbtn">Find all text nodes in div and wrap them</button><br>
+
+	<button id="eachbtn">Alert the value of each list item</button>
+
+	<ul>
+		<li>Coffee</li>
+		<li>Milk</li>
+		<li>Soda</li>
+	</ul>
+
+	<h1 id="eqh1">Welcome to My Homepage</h1>
+	<p id="eqp1">My name is Donald (index 0).</p>
+	<p id="eqp2">Donald Duck (index 1).</p>
+	<p id="eqp3">I live in Duckburg (index 2).</p>
+	<p id="eqp4">My best friend is Mickey (index 3).</p>
+
+	<h1 id="filterh1">Welcome to My Homepage</h1>
+	<p id="filterp1">My name is Donald.</p>
+	<p id="filterp2" class="intro">I live in Duckburg.</p>
+	<p id="filterp3" class="intro">I love Duckburg.</p>
+	<p id="filterp4">My best friend is Mickey.</p>
+
+	<h1>Welcome to My Homepage</h1>
+	<div style="border:1px solid black">
+		<p>This is a paragraph in a div.</p>
+		<p>This is a paragraph in a div.</p>
+	</div><br>
+	<div style="border:1px solid black">
+		<p>This is a paragraph in another div.</p>
+		<p>This is a paragraph in another div.</p>
+	</div>
+	<p>This is also a paragraph.</p>
+
+	<h1 >Welcome to My Homepage</h1>
+	<p >My <span>name</span> is Donald.</p>
+	<p>I live in <span>Duckburg</span>.</p>
+	<p>My best friend is Mickey.</p>
+
+	<h1>Welcome to My Homepage</h1>
+
+	<div style="border:1px solid black">
+		<p>This is a paragraph in a div.</p>
+		<p>This is a paragraph in a div.</p>
+	</div><br>
+
+	<div style="border:1px solid black">
+		<p>This is a paragraph in another div.</p>
+		<p>This is a paragraph in another div.</p>
+	</div>
+
+	<p>This is also a paragraph.</p>
+
+	<div style="width:500px;" class="siblings">
+		<ul>ul (parent)  
+			<li>li (sibling)</li>
+			<li>li (sibling)</li>
+			<li class="start">li (sibling with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+			<li>li (sibling)</li>
+		</ul>   
+	</div>
+	<div style="width:500px;" class="siblings">
+		<ul>ul (parent)  
+			<li>li (sibling)</li>
+			<li>li (sibling)</li>
+			<li class="start">li (sibling with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+		</ul>   
+	</div>
+
+	<p>In this example, we return all elements that are the next siblings of the li element with class name "start".</p>
+	<div style="width:500px;" class="siblings">
+		<ul>ul (parent)  
+			<li>li (sibling)</li>
+			<li>li (sibling)</li>
+			<li class="start">li (sibling with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+			<li>li (the next sibling of li with class name "start")</li>
+			<li class="stop">li (sibling with class name "stop")</li>
+		</ul>   
+	</div>
+
+	<p>In this example, we return all next sibling elements between the li element with class name "start" and the li element with class name "stop".</p>
+
+<h1>Welcome to My Homepage</h1>
+<p id="notp1">My name is Donald.</p>
+<p id="notp2" class="not">I live in Duckburg.</p>
+<p id="notp3" class="not">I love Duckburg.</p>
+<p id="notp4">My best friend is Mickey.</p>
+
+<button>Set background-color</button>
+
+<div style="border:1px solid black;width:70%;position:absolute;left:10px;top:50px">
+<div style="border:1px solid black;margin:50px;background-color:yellow">
+
+<p>Click button to set the background color of the first positioned parent element of this paragraph.</p>
+
+</div></div>
+<div style="width:500px;" class="siblings">
+  <ul>ul (parent)  
+    <li>li (sibling)</li>
+    <li>li (the previous sibling of li with class name "start")</li>
+    <li class="start">li (sibling with class name "start")</li>
+    <li>li (sibling)</li>
+    <li>li (sibling)</li>
+
+    
+    <div style="width:500px;" class="siblings">
+  <ul>ul (parent)  
+    <li>li (the previous sibling of "start")</li>
+    <li>li (the previous sibling of "start")</li>
+    <li class="start">li (sibling)</li>
+    <li>li (the next sibling of "start")</li>
+    <li>li (the next sibling of "start")</li>
+  </ul>   
+</div>
+
+<p>In this example, we select all elements that are siblings of the li element with class name "start".</p>
+
+  </ul> 
+
+
+
+
+
+
+
+</body>
+</html>
